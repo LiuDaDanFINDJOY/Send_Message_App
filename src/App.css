@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+.container {
+  width: 700px;
+  margin: 10px auto 0px;
+}
+.outputArea {
+  height: 500px;
+  border: 1px dashed black;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.inputArea {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.inputArea button {
+  margin-left: 4px;
+}
+.row {
+  padding: 5px;
+  padding-right: 30px;
+  position: relative;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.userMessage {
+  background: rgba(109, 20, 123, 0.3);
+  border: 2px solid rgb(109, 20, 123);
+}
+.systemMessage {
+  background: rgba(80, 96, 187, 0.3);
+  border: 2px solid rgb(80, 96, 187);
+}
+.systemMessage > .content {
+  text-align: center;
+}
+.revertButton {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}
+.opertation {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}

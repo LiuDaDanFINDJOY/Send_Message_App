@@ -1,0 +1,13 @@
+import React from "react";
+import BaseOutput from "./BaseOutput.jsx";
+
+const SystemInvite = ({ content }) => {
+  console.log("邀请");
+  return (
+    <BaseOutput
+      messageTypeClassName="systemMessage"
+      content={<>系统消息：邀请{content}进群</>}
+    />
+  );
+};
+export default SystemInvite;
