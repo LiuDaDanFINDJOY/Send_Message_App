@@ -1,7 +1,7 @@
 import React from "react";
 import BaseOutput from "./BaseOutput.jsx";
 
-const SystemOutput = ({ content }) => {
+const SystemReverse = ({ content }) => {
   return (
     <BaseOutput
       messageTypeClassName="systemMessage"
@@ -9,4 +9,4 @@ const SystemOutput = ({ content }) => {
     />
   );
 };
-export default SystemOutput;
+export default SystemReverse;

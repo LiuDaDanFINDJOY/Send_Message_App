@@ -1,6 +1,5 @@
 import React from "react";
 import editMessage from "./editMessage";
-import { compose } from "../../utils";
 
 const TextInput = ({ message, change, submit }) => {
   return (
@@ -10,4 +9,4 @@ const TextInput = ({ message, change, submit }) => {
     </div>
   );
 };
-export default compose(editMessage)(TextInput);
+export default editMessage(TextInput);

@@ -1,6 +1,5 @@
 import React from "react";
 import editMessage from "./editMessage";
-import { compose } from "../../utils";
 import { inviteList } from "../data";
 
 const SystemInput = ({ message, change, submit }) => {
@@ -17,4 +16,4 @@ const SystemInput = ({ message, change, submit }) => {
     </div>
   );
 };
-export default compose(editMessage)(SystemInput);
+export default editMessage(SystemInput);

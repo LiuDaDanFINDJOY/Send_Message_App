@@ -4,14 +4,12 @@ import manageDataFlow from "./manageDataFlow";
 import { MESSAGE_TYPE } from "./types";
 import outputTypeMap from "./output";
 import * as Input from "./input";
-import { compose } from "../utils";
 
 const SendMessage = ({ data, replaceItem, addItem }) => {
   return (
     <StyleWrap
       outputArea={data.map(({ content, type }, idx) => {
         let OutPut = outputTypeMap.get(type);
-        console.log(type);
         return (
           <OutPut
             key={idx}
@@ -38,4 +36,4 @@ const SendMessage = ({ data, replaceItem, addItem }) => {
     />
   );
 };
-export default compose(manageDataFlow)(SendMessage);
+export default manageDataFlow(SendMessage);

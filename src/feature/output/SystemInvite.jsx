@@ -2,7 +2,6 @@ import React from "react";
 import BaseOutput from "./BaseOutput.jsx";
 
 const SystemInvite = ({ content }) => {
-  console.log("邀请");
   return (
     <BaseOutput
       messageTypeClassName="systemMessage"

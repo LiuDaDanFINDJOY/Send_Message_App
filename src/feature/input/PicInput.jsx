@@ -1,6 +1,5 @@
 import React from "react";
 import editMessage from "./editMessage";
-import { compose } from "../../utils";
 import { imageList } from "../data";
 
 const PicInput = ({ message, change, submit }) => {
@@ -17,4 +16,4 @@ const PicInput = ({ message, change, submit }) => {
     </div>
   );
 };
-export default compose(editMessage)(PicInput);
+export default editMessage(PicInput);
